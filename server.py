@@ -13,8 +13,8 @@ try:
     host=os.getenv('dbhost')
     port=os.getenv('dbport')
     # Coming from secrets manager
-    user=os.getenv('username')
-    password=os.getenv('password')
+    user=os.getenv('dbuser')
+    password=os.getenv('dbpass')
     conn = psycopg2.connect(dbname=dbname,
                             user=user,
                             host=host,
